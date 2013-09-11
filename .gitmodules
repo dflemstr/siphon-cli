@@ -1,6 +1,6 @@
 [submodule ".gopath/src/polydawn.net/siphon"]
 	path = .gopath/src/polydawn.net/siphon
-	url = https://github.com/heavenlyhash/siphon
+	url = https://github.com/polydawn/siphon
 [submodule ".gopath/src/github.com/kr/pty"]
 	path = .gopath/src/github.com/kr/pty
 	url = https://github.com/kr/pty
