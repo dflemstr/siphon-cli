@@ -67,7 +67,7 @@ Usage example, from clone to execution
 --------------------------------------
 
 ```
-git clone https://github.com/heavenlyhash/siphon-cli
+git clone https://github.com/polydawn/siphon-cli
 cd siphon-cli
 ./go.build.sh
 ./siphon host &
@@ -116,7 +116,7 @@ DEBUG='*' siphon host
 Siphon as a Library
 -------------------
 
-Core features of Siphon are also available as a pure library (no main methods, no args parsing, just the good stuff): https://github.com/heavenlyhash/siphon
+Core features of Siphon are also available as a pure library (no main methods, no args parsing, just the good stuff): https://github.com/polydawn/siphon
 
 siphon-cli (this repo) is as thin as possible of a wrapper on top of the siphon library.  It adds args parsing, and also daemon mode.  (The siphon library contains support for redirects, so you can implement your own variations of "daemon mode" using the library.)
 
