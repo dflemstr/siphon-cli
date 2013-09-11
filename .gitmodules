@@ -1,15 +1,15 @@
 [submodule ".gopath/src/polydawn.net/siphon"]
 	path = .gopath/src/polydawn.net/siphon
-	url = https://github.com/polydawn/siphon
+	url = https://github.com/polydawn/siphon.git
 [submodule ".gopath/src/github.com/kr/pty"]
 	path = .gopath/src/github.com/kr/pty
-	url = https://github.com/kr/pty
+	url = https://github.com/kr/pty.git
 [submodule ".gopath/src/github.com/coocood/assrt"]
 	path = .gopath/src/github.com/coocood/assrt
-	url = https://github.com/coocood/assrt
+	url = https://github.com/coocood/assrt.git
 [submodule ".gopath/src/github.com/dotcloud/docker"]
 	path = .gopath/src/github.com/dotcloud/docker
-	url = https://github.com/dotcloud/docker
+	url = https://github.com/dotcloud/docker.git
 [submodule ".gopath/src/github.com/jessevdk/go-flags"]
 	path = .gopath/src/github.com/jessevdk/go-flags
 	url = https://github.com/jessevdk/go-flags.git
