@@ -22,11 +22,6 @@ func main() {
 	//Parse arguments, handle errors/help
 	_, err := parser.Parse()
 	if err != nil {
-		if err.(*flags.Error).Type == flags.ErrHelp { //Usage help
-			fmt.Printf("%s", err)
-		} else {
-			fmt.Printf("Error parsing: %s\n", err)
-		}
 		os.Exit(EXIT_BADARGS)
 	}
 }
