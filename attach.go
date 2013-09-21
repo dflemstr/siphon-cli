@@ -27,7 +27,6 @@ func (opts *attachOpts) Execute(args []string) error {
 
 	client := siphon.Connect(addr)
 
-	client.Connect()
 	client.Attach(os.Stdin, os.Stdout)
 
 	return nil
