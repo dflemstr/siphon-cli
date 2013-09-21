@@ -112,7 +112,7 @@ func TestUnixSocket(t *testing.T) {
 	host := siphon.NewHost(cmd, addr)
 	host.Serve(); defer host.UnServe()
 
-	client := siphon.NewClient(addr)
+	client := siphon.Connect(addr)
 	client.Connect()
 	//client.Attach() // you can't do this in a test.  there's no tty.
 
@@ -149,10 +149,10 @@ func TestDoubleClient(t *testing.T) {
 	host := siphon.NewHost(cmd, addr)
 	host.Serve(); defer host.UnServe()
 
-	client1 := siphon.NewClient(addr)
+	client1 := siphon.Connect(addr)
 	client1.Connect()
 
-	client2 := siphon.NewClient(addr)
+	client2 := siphon.Connect(addr)
 	client2.Connect()
 
 	host.Start()
