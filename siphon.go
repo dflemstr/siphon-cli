@@ -42,9 +42,8 @@ func ParseNewAddr(addr string) (siphon.Addr, error) {
 	switch addrParts[0] {
 	case "unix":
 		return siphon.NewAddr(addr, "unix", addrParts[1]), nil
-	// case "tcp":
-	//	// lib siphon supports this, but it's so very likely to be a bad idea that i'm making you compile a program for it yourself if you want this.
-	//	return siphon.NewAddr(addr, "tcp", addrParts[1]), nil
+	case "tcp":
+		return siphon.NewAddr(addr, "tcp", addrParts[1]), nil
 	default:
 		return siphon.Addr{}, fmt.Errorf("invalid protocol format.  \"%s\"", addr)
 	}
